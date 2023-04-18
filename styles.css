@@ -1,7 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap');
+
 /* Reset Settings */
+:root {
+  --dark: #272a31;
+  --secondary: #ec5242;
+  --light: #d3d3d3;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.upper-nav {
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+
+nav {
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  left: -100%;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+nav .links ul {
+  list-style-type: none;
+}
+
+nav .links li a,
+nav .camp a,
+.links i {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+
+nav .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.links i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.hero-sect i:hover {
+  cursor: pointer;
+}
+
+.hero-sect i {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.m-logo {
+  width: 20%;
+}
+
+.hero-sect {
+  position: absolute;
+  top: 0;
+  background-image: url(./images/banner.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 160px;
+  filter: grayscale(100%);
+}
+
+.describe {
+  position: relative;
+  top: 160px;
+  background-color: var(--light);
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav,
+  #hamburger {
+    display: none;
+  }
+
+  .upper-nav,
+  nav {
+    background-color: var(--dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .upper-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    gap: 20px;
+  }
+
+  .upper-nav ul li {
+    color: #fff;
+    list-style-type: none;
+    padding: 8px;
+  }
+
+  .upper-nav ul li:hover {
+    cursor: pointer;
+  }
+
+  .d-links {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .d-links ul a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 700;
+  }
+
+  .d-links ul li a:hover {
+    color: var(--secondary);
+    cursor: pointer;
+  }
+
+  .camp {
+    color: var(--secondary);
+    border: 4px solid var(--secondary);
+    padding: 5px 15px;
+  }
+
+  .camp a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .d-logo {
+    width: 60px;
+  }
+
+  .hero-sect {
+    position: absolute;
+    top: 100px;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 160px;
+  }
+
+  .describe {
+    position: relative;
+    top: 260px;
+    background-color: var(--light);
+    opacity: 1;
+    height: auto;
+    padding: 100px 50px;
+  }
+
+  .describe h1 {
+    font-size: 60px;
+    color: var(--secondary);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .describe p {
+    margin-top: 20px;
+  }
 }
