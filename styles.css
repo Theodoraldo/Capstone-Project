@@ -15,7 +15,8 @@
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .upper-nav {
@@ -35,7 +36,7 @@ nav {
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  position: absolute;
+  position: fixed;
   left: -100%;
   transition: 0.3s;
   z-index: 5;
@@ -80,7 +81,7 @@ nav .links ul {
 }
 
 .hero-sect {
-  position: absolute;
+  position: static;
   top: 0;
   background-image: url(./images/banner.jpg);
   background-repeat: no-repeat;
@@ -90,9 +91,148 @@ nav .links ul {
 }
 
 .describe {
-  position: relative;
-  top: 160px;
   background-color: var(--light);
+  padding: 30px;
+}
+
+.describe h1 {
+  font-size: 30px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px black;
+}
+
+.describe p {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  word-spacing: 30%;
+}
+
+.main-row {
+  position: static;
+  background-color: var(--dark);
+  padding: 40px;
+}
+
+.main-header {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.main-header:after {
+  content: '';
+  width: 100px;
+  border: 2px solid var(--secondary);
+  position: absolute;
+  left: 25%;
+  bottom: 12px;
+}
+
+.main-footer {
+  display: none;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-details {
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  padding: 20px;
+  background-color: #373b44;
+  place-items: center;
+}
+
+.main-details h3 {
+  color: var(--secondary);
+}
+
+.main-details p {
+  color: #fff;
+}
+
+.center-content {
+  padding: 10px;
+}
+
+.join-btn {
+  padding: 20px;
+  width: 80%;
+  color: #fff;
+  background-color: var(--secondary);
+  border: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.features {
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.experts {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.experts-details {
+  display: flex;
+  gap: 20px;
+}
+
+.experts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experts-name {
+  font-weight: bold;
+}
+
+.experts-place {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.media-partners {
+  background-color: var(--dark);
+  height: auto;
+  padding: 40px;
+}
+
+.media-partners h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: var(--light);
+  text-align: center;
+  padding-top: 60px;
+  height: 120px;
 }
 
 /* Large devices (laptops/desktops, 768px and up) */
@@ -105,10 +245,7 @@ nav .links ul {
   .upper-nav,
   nav {
     background-color: var(--dark);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: static;
   }
 
   .upper-nav ul {
@@ -167,8 +304,7 @@ nav .links ul {
   }
 
   .hero-sect {
-    position: absolute;
-    top: 100px;
+    position: static;
     background-image: url(./images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,10 +313,8 @@ nav .links ul {
   }
 
   .describe {
-    position: relative;
-    top: 260px;
+    position: static;
     background-color: var(--light);
-    opacity: 1;
     height: auto;
     padding: 100px 50px;
   }
@@ -196,5 +330,55 @@ nav .links ul {
 
   .describe p {
     margin-top: 20px;
+    font-size: 30px;
+    line-height: 1.6;
+    word-spacing: 30%;
+  }
+
+  .main-row {
+    background-color: var(--dark);
+    padding: 50px 60px;
+  }
+
+  .main-footer {
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .main-program {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .main-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #373b44;
+    place-items: center;
+  }
+
+  .main-details:hover {
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+  .main-details p {
+    text-align: center;
+  }
+
+  .experts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
   }
 }
