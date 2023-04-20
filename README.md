@@ -2,8 +2,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="images/mylogo.png" alt="logo" width="140"  height="auto" />
+ <img src="images/mylogo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Theodore's Capstone Project</b></h3>
