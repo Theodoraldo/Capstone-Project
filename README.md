@@ -1,4 +1,5 @@
 # Capstone Project
+
 <a name="readme-top"></a>
 
 <div align="center">
@@ -33,15 +34,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Capstone Project] <a name="about-project"></a>
+# 📖 Capstone Project <a name="about-project"></a>
 
-**[Capstone Project]** is a project I built as part of microverse prerequisite requirements for the completion of module one.
+**Capstone Project** is a project I built as part of microverse prerequisite requirements for the completion of module one.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>CSS</summary>
@@ -75,8 +74,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Speakers]**
 - **[Awareness creation]**
 - **[Eradicate disease]**
@@ -86,6 +83,8 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://theodoraldo.github.io/Capstone-Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,14 +110,12 @@ git clone git@github.com:https://github.com/Theodoraldo/Capstone-Project.git
 
 ### Usage
 
-To run the project, execute the following command:
-
 - Right-click on the Html file and click view in browser.
 - Can also click on liveServer at the bottom-right of VS code if installed
 
 ### Deployment
 
-You can deploy this project using:
+The project was deployed using Github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,4 +174,3 @@ If you like this project email on theodoraldo4you@yahoo.com so that we can eradi
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
