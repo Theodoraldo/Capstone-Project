@@ -30,7 +30,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -42,12 +42,8 @@ nav {
   z-index: 5;
 }
 
-nav .links ul {
-  list-style-type: none;
-}
-
-nav .links li a,
 nav .camp a,
+nav .links li a,
 .links i {
   text-decoration: none;
   color: #fff;
@@ -55,6 +51,7 @@ nav .camp a,
 }
 
 nav .links ul {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -66,18 +63,22 @@ nav .links ul {
   left: 20px;
 }
 
-.hero-sect i:hover {
-  cursor: pointer;
-}
-
 .hero-sect i {
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
+.hero-sect i:hover {
+  cursor: pointer;
+}
+
 .m-logo {
-  width: 20%;
+  width: 50%;
+}
+
+.logo-center {
+  text-align: center;
 }
 
 .hero-sect {
@@ -120,17 +121,20 @@ nav .links ul {
 .main-header {
   color: #fff;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   position: relative;
 }
 
-.main-header:after {
-  content: '';
-  width: 100px;
-  border: 2px solid var(--secondary);
+.main-header::after {
   position: absolute;
-  left: 25%;
-  bottom: 12px;
+  content: '';
+  height: 2px;
+  bottom: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  background: var(--secondary);
 }
 
 .main-footer {
@@ -179,7 +183,20 @@ nav .links ul {
   font-weight: 900;
   font-size: 24px;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px;
+  position: relative;
+}
+
+.features::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  background: var(--secondary);
 }
 
 .experts {
@@ -226,6 +243,19 @@ nav .links ul {
   color: #fff;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.media-partners h2::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  background: var(--secondary);
 }
 
 .footer {
@@ -233,6 +263,23 @@ nav .links ul {
   text-align: center;
   padding-top: 60px;
   height: 120px;
+}
+
+.partners img {
+  filter: grayscale(100%);
+}
+
+.about-head {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-body {
+  padding: 30px;
+}
+
+.about-body p {
+  font-size: 16px;
 }
 
 /* Large devices (laptops/desktops, 768px and up) */
@@ -272,6 +319,14 @@ nav .links ul {
     align-items: center;
   }
 
+  .camp a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secondary);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
   .d-links ul a {
     color: var(--dark);
     text-decoration: none;
@@ -289,14 +344,6 @@ nav .links ul {
     color: var(--secondary);
     border: 4px solid var(--secondary);
     padding: 5px 15px;
-  }
-
-  .camp a {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--secondary);
-    cursor: pointer;
-    text-decoration: none;
   }
 
   .d-logo {
@@ -374,11 +421,27 @@ nav .links ul {
 
   .main-details p {
     text-align: center;
+    font-size: 18px;
   }
 
   .experts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2%;
+  }
+
+  .experts-name,
+  .main-details h3 {
+    font-size: 20px;
+  }
+
+  .experts-place,
+  .experts-achieve,
+  .main-footer {
+    font-size: 18px;
+  }
+
+  .about-body p {
+    font-size: 20px;
   }
 }
