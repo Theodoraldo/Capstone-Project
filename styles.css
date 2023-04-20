@@ -98,7 +98,6 @@ nav .links ul {
   text-align: center;
   font-weight: 900;
   -webkit-background-clip: text;
-  color: transparent;
   background-image: url(./images/header\ background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -505,7 +504,6 @@ nav .links ul {
 
   .describe h1 {
     font-size: 60px;
-    color: var(--secondary);
     text-transform: uppercase;
     font-weight: 900;
     -webkit-background-clip: text;
