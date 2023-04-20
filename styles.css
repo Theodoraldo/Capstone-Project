@@ -15,7 +15,7 @@
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -63,13 +63,13 @@ nav .links ul {
   left: 20px;
 }
 
-.hero-sect i {
+#hamburger {
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
-.hero-sect i:hover {
+#hamburger:hover {
   cursor: pointer;
 }
 
@@ -81,28 +81,27 @@ nav .links ul {
   text-align: center;
 }
 
-.hero-sect {
-  position: static;
-  top: 0;
-  background-image: url(./images/banner.jpg);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 160px;
-  filter: grayscale(100%);
-}
-
 .describe {
+  position: static;
+  background-image: url(./images/mobile-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--light);
   padding: 30px;
 }
 
 .describe h1 {
-  font-size: 30px;
+  padding-top: 50px;
+  font-size: 40px;
   color: var(--secondary);
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  text-shadow: 2px 2px 2px black;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url(./images/header\ background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .describe p {
@@ -110,6 +109,16 @@ nav .links ul {
   font-size: 18px;
   line-height: 1.6;
   word-spacing: 30%;
+  border: 2px solid #fff;
+  padding: 15px;
+  background-color: rgb(241, 241, 241);
+  color: #5c5b5b;
+}
+
+.describe h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #5c5b5b;
 }
 
 .main-row {
@@ -185,6 +194,7 @@ nav .links ul {
   text-align: center;
   margin: 30px;
   position: relative;
+  color: rgb(92, 91, 91);
 }
 
 .features::after {
@@ -219,11 +229,16 @@ nav .links ul {
 
 .experts-name {
   font-weight: bold;
+  color: rgb(92, 91, 91);
 }
 
 .experts-place {
   color: var(--secondary);
   font-weight: bold;
+}
+
+.experts-achieve {
+  color: #5c5b5b;
 }
 
 .partners {
@@ -269,17 +284,146 @@ nav .links ul {
   filter: grayscale(100%);
 }
 
-.about-head {
-  text-align: center;
-  padding: 20px;
-}
-
-.about-body {
+/* About Styling */
+.about-banner {
+  position: static;
+  background-image: url(./images/mobile-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 30px;
 }
 
-.about-body p {
-  font-size: 16px;
+.about-banner h1 {
+  padding-top: 50px;
+  font-size: 40px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+.about-logo {
+  border: 1px solid var(--light);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.about-logo img {
+  filter: grayscale(100%);
+}
+
+.home-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.about-white {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  word-spacing: 30%;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #5c5b5b;
+  border: 1px solid var(--light);
+}
+
+.about-nowhite {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  word-spacing: 30%;
+  padding: 15px;
+  text-align: center;
+  color: #5c5b5b;
+}
+
+.about-nowhite span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.full-width {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  word-spacing: 30%;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #5c5b5b;
+  width: 100%;
+}
+
+.full-width-center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.full-width-center h3 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.full-width-center h3::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  background: var(--secondary);
+}
+
+.last-time {
+  text-align: center;
+}
+
+.last-time h3 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  word-spacing: 30%;
+  text-align: center;
+  background-color: #fff;
+  color: #5c5b5b;
+  position: relative;
+}
+
+.last-time h3::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50px;
+  background: var(--secondary);
+}
+
+.last-time p {
+  background-color: #fff;
+  color: #5c5b5b;
+  margin: auto 20px;
+}
+
+.see-past {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-past img {
+  width: 75%;
 }
 
 /* Large devices (laptops/desktops, 768px and up) */
@@ -350,18 +494,11 @@ nav .links ul {
     width: 60px;
   }
 
-  .hero-sect {
-    position: static;
-    background-image: url(./images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 160px;
-  }
-
   .describe {
     position: static;
-    background-color: var(--light);
+    background-image: url(./images/desktop-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: auto;
     padding: 100px 50px;
   }
@@ -370,9 +507,15 @@ nav .links ul {
     font-size: 60px;
     color: var(--secondary);
     text-transform: uppercase;
-    text-align: center;
     font-weight: 900;
-    text-shadow: 2px 2px 2px black;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(./images/header\ background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    text-align: left;
+    padding-left: 10%;
   }
 
   .describe p {
@@ -380,6 +523,12 @@ nav .links ul {
     font-size: 30px;
     line-height: 1.6;
     word-spacing: 30%;
+    margin-left: 10%;
+    width: 60%;
+  }
+
+  .span-align {
+    margin-left: 10%;
   }
 
   .main-row {
@@ -441,7 +590,34 @@ nav .links ul {
     font-size: 18px;
   }
 
-  .about-body p {
-    font-size: 20px;
+  .acenter {
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .home-icon {
+    position: absolute;
+    top: 110px;
+    right: 40px;
+  }
+
+  .full-width-center {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .see-past {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .see-past img {
+    width: 35%;
   }
 }
