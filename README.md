@@ -1,9 +1,9 @@
 # Capstone Project
+
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="logo.ico" alt="logo" width="140"  height="auto" />
+ <img src="images/mylogo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Theodore's Capstone Project</b></h3>
@@ -34,15 +34,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Capstone Project] <a name="about-project"></a>
+# 📖 Capstone Project <a name="about-project"></a>
 
-**[Capstone Project]** is a project I built as part of microverse prerequisite requirements for the completion of module one.
+**Capstone Project** is a project I built as part of microverse prerequisite requirements for the completion of module one.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>CSS</summary>
@@ -76,8 +74,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Speakers]**
 - **[Awareness creation]**
 - **[Eradicate disease]**
@@ -87,6 +83,8 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://theodoraldo.github.io/Capstone-Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,14 +110,20 @@ git clone git@github.com:https://github.com/Theodoraldo/Capstone-Project.git
 
 ### Usage
 
-To run the project, execute the following command:
-
 - Right-click on the Html file and click view in browser.
 - Can also click on liveServer at the bottom-right of VS code if installed
 
 ### Deployment
 
-You can deploy this project using:
+The project was deployed using Github pages.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Walkthrough Demo <a name="live-demo"></a>
+
+- [Walkthrogh Demo Link](https://www.loom.com/share/8aff8f3edfaa404a9ddf2f2a8b8c0a5a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,6 +159,7 @@ If you like this project email on theodoraldo4you@yahoo.com so that we can eradi
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- Thanks to Cindy Shin for this awesome design template.
 - I would like to thank Microverse for such an opportunity given to me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -178,4 +183,3 @@ If you like this project email on theodoraldo4you@yahoo.com so that we can eradi
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
