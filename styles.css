@@ -139,7 +139,7 @@ nav .links ul {
 .main-row {
   position: static;
   background-color: var(--dark);
-  padding: 40px;
+  padding: 10px;
   background-image: url(./images/cross.svg);
 }
 
@@ -183,10 +183,12 @@ nav .links ul {
 
 .main-details h3 {
   color: var(--secondary);
+  font-size: 14px;
 }
 
 .main-details p {
   color: #fff;
+  font-size: 14px;
 }
 
 .center-content {
@@ -252,16 +254,19 @@ nav .links ul {
 .experts-name {
   font-weight: bold;
   color: rgb(92, 91, 91);
+  font-size: 16px;
 }
 
 .experts-place {
   color: var(--secondary);
   font-weight: bold;
+  font-size: 14px;
   font-style: italic;
 }
 
 .experts-achieve {
   color: #5c5b5b;
+  font-size: 14px;
 }
 
 .partners {
@@ -487,6 +492,10 @@ nav .links ul {
     cursor: pointer;
   }
 
+  .socia-nav {
+    padding-right: 12%;
+  }
+
   .d-links {
     background-color: #fff;
     display: flex;
@@ -591,6 +600,7 @@ nav .links ul {
     flex-direction: column;
     gap: 20px;
     place-items: center;
+    width: 300px;
   }
 
   .main-details:hover {
