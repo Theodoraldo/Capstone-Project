@@ -119,6 +119,14 @@ The project was deployed using Github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Walkthrough Demo <a name="live-demo"></a>
+
+- [Walkthrogh Demo Link](https://www.loom.com/share/8aff8f3edfaa404a9ddf2f2a8b8c0a5a)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
@@ -151,6 +159,7 @@ If you like this project email on theodoraldo4you@yahoo.com so that we can eradi
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- Thanks to Cindy Shin for this awesome design template.
 - I would like to thank Microverse for such an opportunity given to me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
