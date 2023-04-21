@@ -47,7 +47,12 @@ nav .links li a,
 .links i {
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.camp a:visited,
+.camp a:active {
+  color: var(--secondary);
 }
 
 nav .links ul {
@@ -73,6 +78,12 @@ nav .links ul {
   cursor: pointer;
 }
 
+.welcome {
+  text-align: center;
+  margin-top: 60px;
+  padding: 10px;
+}
+
 .m-logo {
   width: 50%;
 }
@@ -91,7 +102,6 @@ nav .links ul {
 }
 
 .describe h1 {
-  padding-top: 50px;
   font-size: 40px;
   color: var(--secondary);
   text-transform: uppercase;
@@ -103,7 +113,7 @@ nav .links ul {
   background-size: cover;
 }
 
-.describe p {
+.describe .hero-text {
   margin-top: 15px;
   font-size: 18px;
   line-height: 1.6;
@@ -114,16 +124,23 @@ nav .links ul {
   color: #5c5b5b;
 }
 
-.describe h2 {
+.span-align h2 {
   margin-top: 30px;
   margin-bottom: 15px;
   color: #5c5b5b;
+}
+
+.describe .welcome {
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .main-row {
   position: static;
   background-color: var(--dark);
   padding: 40px;
+  background-image: url(./images/cross.svg);
 }
 
 .main-header {
@@ -157,9 +174,10 @@ nav .links ul {
 
 .main-details {
   display: grid;
-  grid-template-columns: 20% 30% 50%;
+  grid-template-columns: 10% 30% 60%;
+  column-gap: 10px;
   padding: 20px;
-  background-color: #373b44;
+  background-color: rgb(55, 59, 68, 0.5);
   place-items: center;
 }
 
@@ -220,6 +238,11 @@ nav .links ul {
   gap: 20px;
 }
 
+.experts-details img {
+  width: 160px;
+  height: 160px;
+}
+
 .experts-info {
   display: flex;
   flex-direction: column;
@@ -234,6 +257,7 @@ nav .links ul {
 .experts-place {
   color: var(--secondary);
   font-weight: bold;
+  font-style: italic;
 }
 
 .experts-achieve {
@@ -274,12 +298,15 @@ nav .links ul {
 
 .footer {
   background-color: var(--light);
-  text-align: center;
-  padding-top: 60px;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
 }
 
-.partners img {
+.partners img,
+.footer img {
   filter: grayscale(100%);
 }
 
@@ -293,7 +320,6 @@ nav .links ul {
 }
 
 .about-banner h1 {
-  padding-top: 50px;
   font-size: 40px;
   color: var(--secondary);
   text-transform: uppercase;
@@ -421,6 +447,12 @@ nav .links ul {
   align-items: center;
 }
 
+.acenter .welcome {
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .see-past img {
   width: 75%;
 }
@@ -442,7 +474,7 @@ nav .links ul {
     display: flex;
     justify-content: flex-end;
     padding-right: 50px;
-    gap: 20px;
+    gap: 2px;
   }
 
   .upper-nav ul li {
@@ -518,7 +550,7 @@ nav .links ul {
 
   .describe p {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.6;
     word-spacing: 30%;
     margin-left: 10%;
@@ -532,6 +564,7 @@ nav .links ul {
   .main-row {
     background-color: var(--dark);
     padding: 50px 60px;
+    background-image: url(./images/cross.svg);
   }
 
   .main-footer {
@@ -557,7 +590,6 @@ nav .links ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #373b44;
     place-items: center;
   }
 
@@ -568,13 +600,13 @@ nav .links ul {
 
   .main-details p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .experts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2%;
+    margin: 10px 10px;
   }
 
   .experts-name,
@@ -585,7 +617,7 @@ nav .links ul {
   .experts-place,
   .experts-achieve,
   .main-footer {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .acenter {
@@ -617,5 +649,17 @@ nav .links ul {
 
   .see-past img {
     width: 35%;
+  }
+
+  .welcome {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .experts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 70px;
   }
 }
