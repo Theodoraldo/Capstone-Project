@@ -14,7 +14,7 @@ closeMenu.addEventListener('click', () => {
   showMenu.style.left = '-100%';
 });
 
-const speakerData = [
+const speakersData = [
   {
     id: 0,
     personImg: './images/AnnahAsamoah.png',
@@ -59,67 +59,17 @@ const speakerData = [
   },
 ];
 
-speakers.innerHTML = `
+speakers.innerHTML = speakersData.map((speakerData) => `
 <div class="experts-details">
-<img src="${speakerData[0].personImg}" alt="Dr Annah" />
+<img src="${speakerData.personImg}" alt="Dr Annah"/>
 <div class="experts-info">
-  <h3 class="experts-name">${speakerData[0].personName}</h3>
-  <p class="experts-place">${speakerData[0].placeofWork}</p>
-  <p class="experts-achieve">${speakerData[0].duties}
+  <h3 class="experts-name">${speakerData.personName}</h3>
+  <p class="experts-place">${speakerData.placeofWork}</p>
+  <p class="experts-achieve">${speakerData.duties}
   </p>
 </div>
 </div>
-
-<div class="experts-details">
-<img src="${speakerData[1].personImg}" alt="Dr Annah" />
-<div class="experts-info">
-  <h3 class="experts-name">${speakerData[1].personName}</h3>
-  <p class="experts-place">${speakerData[1].placeofWork}</p>
-  <p class="experts-achieve">${speakerData[1].duties}
-  </p>
-</div>
-</div>
-
-<div class="experts-details">
-<img src="${speakerData[2].personImg}" alt="Dr Annah" />
-<div class="experts-info">
-  <h3 class="experts-name">${speakerData[2].personName}</h3>
-  <p class="experts-place">${speakerData[2].placeofWork}</p>
-  <p class="experts-achieve">${speakerData[2].duties}
-  </p>
-</div>
-</div>
-
-<div class="experts-details">
-<img src="${speakerData[3].personImg}" alt="Dr Annah" />
-<div class="experts-info">
-  <h3 class="experts-name">${speakerData[3].personName}</h3>
-  <p class="experts-place">${speakerData[3].placeofWork}</p>
-  <p class="experts-achieve">${speakerData[3].duties}
-  </p>
-</div>
-</div>
-
-<div class="experts-details">
-<img src="${speakerData[4].personImg}" alt="Dr Annah" />
-<div class="experts-info">
-  <h3 class="experts-name">${speakerData[4].personName}</h3>
-  <p class="experts-place">${speakerData[4].placeofWork}</p>
-  <p class="experts-achieve">${speakerData[4].duties}
-  </p>
-</div>
-</div>
-
-<div class="experts-details">
-<img src="${speakerData[5].personImg}" alt="Dr Annah" />
-<div class="experts-info">
-  <h3 class="experts-name">${speakerData[5].personName}</h3>
-  <p class="experts-place">${speakerData[5].placeofWork}</p>
-  <p class="experts-achieve">${speakerData[5].duties}
-  </p>
-</div>
-</div>
-  `;
+  `).join('');
 
 navItems.forEach((item) => {
   item.addEventListener('click', () => {
