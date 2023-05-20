@@ -144,7 +144,7 @@ The project was deployed using Github pages.
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Animation]**
-- [ ] **[Zoom to Join Forum]**
+- [ ] **[Social Media Platforms]**
 - [ ] **[Live question]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
