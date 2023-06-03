@@ -145,7 +145,7 @@ The project was deployed using Github pages.
 
 - [ ] **[Animation]**
 - [ ] **[Social Media Platforms]**
-- [ ] **[Live question]**
+- [ ] **[Live join on all platforms]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
